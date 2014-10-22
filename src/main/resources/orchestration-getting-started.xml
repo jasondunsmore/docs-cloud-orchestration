@@ -678,6 +678,7 @@ export OS_USERNAME=&lt;username>
 export OS_TENANT_ID=&lt;tenant_id>
 export HEAT_URL=<link xlink:href="https://ord.orchestration.api.rackspacecloud.com/v1/">https://ord.orchestration.api.rackspacecloud.com/v1/</link>${OS_TENANT_ID}  
 export OS_PASSWORD=&lt;password>
+export OS_REGION_NAME=ORD
 </computeroutput></screen>                            
                         </example>
                         
@@ -689,6 +690,7 @@ export OS_USERNAME=&lt;username>
 export OS_TENANT_ID=&lt;tenant_id>
 export HEAT_URL=<link xlink:href="https://ord.orchestration.api.rackspacecloud.com/v1/">https://lon.orchestration.api.rackspacecloud.com/v1/</link>${OS_TENANT_ID}
 export OS_PASSWORD=&lt;password>
+export OS_REGION_NAME=LON
 </computeroutput></screen>
                         </example></para>
                     <note>
@@ -705,7 +707,9 @@ export OS_PASSWORD=&lt;password>
 set OS_USERNAME=&lt;username>
 set OS_TENANT_ID=&lt;tenant_id>
 set HEAT_URL=https://ord.orchestration.api.rackspacecloud.com/v1/${OS_TENANT_ID}
-set OS_PASSWORD=&lt;password></computeroutput></screen>
+set OS_PASSWORD=&lt;password>
+export OS_REGION_NAME=ORD
+</computeroutput></screen>
                                    </para>
                                 </listitem>
                                 <listitem>
@@ -790,6 +794,12 @@ set OS_PASSWORD=&lt;password></computeroutput></screen>
                                    <td>OS_PASSWORD</td>
                                    <td>Your Rackspace Cloud
                                    password.</td>
+                                </tr>
+                                <tr>
+                                   <td>OS_REGION</td>
+                                   <td>The Rackspace Cloud region
+                                   where you want to deploy the
+                                   &Deployment; resources.</td>
                                 </tr>
                             </tbody>
                         </table></para>
